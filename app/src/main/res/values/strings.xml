@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">CursoAndroidAula05</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="e_mail">E-mail</string>
+    <string name="login">Login</string>
+    <string name="btnLogin">Login</string>
+    <string name="btnRegister">Register</string>
 </resources>
