@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CursoAndroidAula05</string>
+    <string name="app_name" translatable="false">AndroidCourseClass05</string>
     <string name="name">Name</string>
     <string name="password">Password</string>
     <string name="e_mail">E-mail</string>
