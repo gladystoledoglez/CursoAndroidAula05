@@ -80,7 +80,7 @@
         app:layout_constraintTop_toBottomOf="@+id/etEmail" />
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnShare"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -105,7 +105,7 @@
         android:text="@string/btnRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/btnShare" />
 
     <ImageButton
         android:id="@+id/ibGoogle"
@@ -145,5 +145,20 @@
         app:layout_constraintStart_toEndOf="@+id/ibFacebook"
         app:layout_constraintTop_toBottomOf="@+id/btnRegister"
         tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvSharedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="#BB86FC"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="TextViewSharedText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
