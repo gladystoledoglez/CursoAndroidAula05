@@ -7,4 +7,5 @@
     <string name="btnLogin">Entrar</string>
     <string name="btnRegister">Cadastrar-se</string>
     <string name="btnShare">Compartilhar</string>
+    <string name="logo_content_description">TODO</string>
 </resources>
