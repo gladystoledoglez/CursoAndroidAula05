@@ -2,6 +2,7 @@ package com.example.cursoandroidaula05.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isVisible
 import com.example.cursoandroidaula05.databinding.ActivityMainBinding
 import com.example.cursoandroidaula05.extensions.*
 import com.example.cursoandroidaula05.presenter.fragments.LoginFragment
@@ -27,5 +28,13 @@ class MainActivity : AppCompatActivity() {
                 else -> String.EMPTY
             }
         }
+    }
+
+    fun hideToolBar() {
+        binding.tbDetails.isVisible = false
+    }
+
+    fun showToolBar() {
+        binding.tbDetails.isVisible = true
     }
 }

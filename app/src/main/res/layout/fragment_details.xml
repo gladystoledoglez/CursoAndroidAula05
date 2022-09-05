@@ -7,30 +7,51 @@
     tools:context=".presenter.fragments.DetailsFragment">
 
     <TextView
-        android:id="@+id/tvName"
+        android:id="@+id/tvUser"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/twice_material_design_size"
+        android:layout_marginBottom="@dimen/default_material_margin"
+        android:gravity="end"
+        android:text="@string/user"
+        android:textSize="@dimen/medium_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/tvEmail"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginEnd="@dimen/twice_material_design_size"
         android:layout_marginBottom="@dimen/default_material_margin"
+        android:gravity="start"
         android:textSize="@dimen/medium_text_size"
         app:layout_constraintBottom_toTopOf="@+id/tvEmail"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvUser"
         tools:text="TextViewName" />
 
     <TextView
-        android:id="@+id/tvEmail"
-        android:layout_width="0dp"
+        android:id="@+id/tvUserEmail"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/twice_material_design_size"
-        android:layout_marginEnd="@dimen/twice_material_design_size"
+        android:layout_marginBottom="@dimen/twice_material_design_size"
+        android:gravity="end"
+        android:text="@string/user_e_mail"
+        android:textSize="@dimen/medium_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/btnShare"
+        app:layout_constraintEnd_toEndOf="@+id/tvUser" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_material_margin"
+        android:gravity="start"
         android:textSize="@dimen/medium_text_size"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="TextViewEmail" />
 

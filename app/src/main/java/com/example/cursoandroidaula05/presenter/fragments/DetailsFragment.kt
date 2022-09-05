@@ -11,6 +11,7 @@ import com.example.cursoandroidaula05.data.enums.MimeTypes
 import com.example.cursoandroidaula05.databinding.FragmentDetailsBinding
 import com.example.cursoandroidaula05.extensions.getStringExtraText
 import com.example.cursoandroidaula05.extensions.putStringExtraText
+import com.example.cursoandroidaula05.ui.MainActivity
 
 class DetailsFragment : Fragment() {
 
@@ -23,6 +24,7 @@ class DetailsFragment : Fragment() {
     ): View {
         super.onCreateView(inflater, container, savedInstanceState)
         binding = FragmentDetailsBinding.inflate(layoutInflater)
+        (activity as? MainActivity?)?.showToolBar()
 
         return binding.root
     }

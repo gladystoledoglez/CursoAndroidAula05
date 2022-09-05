@@ -8,4 +8,6 @@
     <string name="btnRegister">Cadastrar-se</string>
     <string name="btnShare">Compartilhar</string>
     <string name="logo_content_description">TODO</string>
+    <string name="user">Usuário:</string>
+    <string name="user_e_mail">E-mail:</string>
 </resources>

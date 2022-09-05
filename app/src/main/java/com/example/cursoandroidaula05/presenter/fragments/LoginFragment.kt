@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.cursoandroidaula05.databinding.FragmentLoginBinding
 import com.example.cursoandroidaula05.extensions.transitionTo
+import com.example.cursoandroidaula05.ui.MainActivity
 
 class LoginFragment : Fragment() {
 
@@ -19,6 +20,7 @@ class LoginFragment : Fragment() {
     ): View {
         super.onCreateView(inflater, container, savedInstanceState)
         binding = FragmentLoginBinding.inflate(layoutInflater)
+        (activity as? MainActivity?)?.hideToolBar()
 
         return binding.root
     }
@@ -26,7 +28,7 @@ class LoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         with(binding) {
-            btnRegister.setOnClickListener {
+            btnLogin.setOnClickListener {
                 parentFragmentManager.transitionTo(
                     DetailsFragment.newInstance(etName.text.toString(), etEmail.text.toString()),
                     isBackStack = true

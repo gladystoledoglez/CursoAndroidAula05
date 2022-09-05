@@ -8,4 +8,6 @@
     <string name="btnRegister">Register</string>
     <string name="btnShare">Share</string>
     <string name="logo_content_description">TODO</string>
+    <string name="user">User:</string>
+    <string name="user_e_mail">E-mail:</string>
 </resources>
